@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:text="@string/initial_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="100dp"
+        android:gravity="right"
+        android:numeric="decimal" />
+
+    <TextView
+        android:text="@string/message_muc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="12dp" />
+
+    <Spinner
+        android:id="@+id/select_from"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/options_metric" />
+
+    <TextView
+        android:text="@string/message_to"
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="12dp" />
+
+    <Spinner
+        android:id="@+id/select_to"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/options_metric" />
+
+    <TextView
+        android:text="@string/message_ev"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/et_value"
+        android:textSize="50dp"
+        android:gravity="right"
+        android:hint="@string/initial_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numeric="decimal" />
+
+    <Button
+        android:id="@+id/btn_converter"
+        android:text="@string/button_converter"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_pink_500" />
+
+</LinearLayout>

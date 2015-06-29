@@ -1,17 +1,43 @@
 package com.gonzalo.helloworld;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
+import com.gonzalo.helloworld.basic.Calculator;
+import com.gonzalo.helloworld.basic.MetricUnitConverter;
 
 
 public class MainActivity extends Activity {
+
+    private Button btnMetricUnitConverter, btnCalculator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btnCalculator = (Button)findViewById(R.id.btn_calculator);
+        btnMetricUnitConverter = (Button)findViewById(R.id.btn_converter_unit);
+
+        btnMetricUnitConverter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MetricUnitConverter.class));
+            }
+        });
+
+        btnCalculator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Calculator.class));
+            }
+        });
+
     }
 
     @Override
