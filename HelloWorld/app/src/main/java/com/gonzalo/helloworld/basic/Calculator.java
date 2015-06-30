@@ -43,6 +43,7 @@ public class Calculator extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculator);
+        setTitle(R.string.activity_calculator);
 
         tResultC = (TextView)findViewById(R.id.txt_cResult);
 

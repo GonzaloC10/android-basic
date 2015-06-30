@@ -12,10 +12,10 @@
 
     <TextView
         android:id="@+id/txt_result"
-        android:text="@string/initial_0"
+        android:hint="@string/initial_0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="100dp"
+        android:textSize="60dp"
         android:gravity="right"
         android:numeric="decimal" />
 
@@ -58,7 +58,7 @@
 
     <EditText
         android:id="@+id/et_value"
-        android:textSize="50dp"
+        android:textSize="30dp"
         android:gravity="right"
         android:hint="@string/initial_0"
         android:layout_width="match_parent"
