@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">Homework Apps</string>
 
-    <string name="hello_world">Hub 7 - Android Class!</string>
+    <string name="hello_world">Hub 7 - Android Basic Class!</string>
     <string name="action_settings">Settings</string>
     <string name="activity_calculator">Calculator</string>
+    <string name="activity_contact">Phone Book</string>
+    <string name="activity_list">List</string>
+    <string name="activity_weather">Weather</string>
+    <string name="activity_earthquake">Earthquake</string>
+    <string name="activity_tweets_hashtags">Tweets - Hashtags</string>
     <string name="currency_converter">Currency converter A.S</string>
     <string name="metric_unit_converter">Metric unit converter</string>
     <string name="button_converter">Converter</string>
